@@ -1,0 +1,159 @@
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+
+  <script LANGUAGE="JavaScript"> 
+function getParams() 
+{var idx = document.URL.indexOf('?'); 
+var params = new Array(); 
+if (idx != -1)  
+{var pairs = document.URL.substring(idx+1, document.URL.length).split('&'); 
+for (var i=0; i<pairs.length; i++){nameVal = pairs[i].split('='); 
+params[nameVal[0]] = nameVal[1];}} 
+return params;}
+
+params = getParams(); 
+firstname = unescape(params["fname"]); 
+function myFunction() {
+      
+      document.getElementById("message").innerHTML = firstname;
+    }
+
+</script>
+ </head>
+ 
+  <style>
+
+
+
+input[type=text], input[type=password] {
+
+    padding: 10px 0px 10px 0px;
+  margin: 2px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  width:400px
+}
+
+button {
+  background-color: #131313;
+  color: white;
+  padding: 10px 20px;
+  margin: 6px 10px;
+  border: none;
+  cursor: pointer;
+ 
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+
+
+
+
+</style>
+ 
+
+   
+    <body onload="myFunction()">
+     
+<div class="left">
+  <div class="slider">
+    <div class="slides">
+      
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+     
+      
+      <div class="slide first">
+        
+        <img src="./images/Group 1854.png" alt="">
+       
+        <p class="engage"
+       >Commerce Studio</p>
+       <p class="l">AI powered personalization engine dedicated to understanding human tastes</p>
+      
+    </div>
+      <div class="slide">
+        
+        <img src="./images/Group 1852.png" alt="">
+       
+        <p class="engage">Engage Studio</p>
+<p class="l">AI powered personalization engine dedicated to understanding human tastes</p>
+       
+      </div>
+      <div class="slide">
+        <img src="./images/1.png" alt="">
+        <p class="engage"
+       >Taste Studio</p>
+       <p class="l">AI powered personalization engine dedicated to understanding human tastes</p>
+      </div>
+     
+     
+    </div>
+   
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+     
+    </div>
+   
+  </div>
+</div>
+  <div class="right">
+    
+    <div>
+      <img class="maya" src="./images/Maya logo.png">
+      <h1 class="info">AI powered personalization engine dedicated to understanding human tastes</h1>
+      <br><br><br><br><br>
+
+      
+
+    </div>
+    
+   <div>
+        <form action="" method="post">
+          
+          <br><br>
+            <div class="container">
+               
+                <img class="user" src="./images/Group.png">
+                <p class="user1">Request for access</p>
+            </div>
+            <div class="response">
+            
+            <p>Thanks <b><span id="message">kk</span></b>
+               for your interest, We have <b>requested admin </b> to verify and approval. Watchout your email for welcome email with magic link for us.</p>
+            <br>
+            <p>You can also write us at <b>admin@maya.ai</b></p>
+            </div>
+           
+            <br>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+          </form>
+         
+          <a class="access" href="./password_change.html">Lost your password</a> 
+          <br>
+          <br>
+          <a  href="./request_access.html">Not a member yet? Signup Now</a> 
+    </div>
+    
+    
+    
+  <div>
+    <img class ="logo" src="./images/Group 279.png">
+    <p class="mark">2022 All Rights Reserved by Crayon Data Pte Ltd and it’s registered trademark maya.ai</p>
+  </div>
+</div>
+  </body>  
+  </html>
+  
+    </body>
+
+
+
+    
